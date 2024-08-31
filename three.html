@@ -1,0 +1,22 @@
+<!-- write function that changes text color of a paragraph with id "hovertext" to red when mouse hovers over it and changes it back to black when mouse leaves -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <p id="hovertext" onmouseover="fun()" onmouseleave="fun1()">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi in ex mollitia enim voluptatibus nobis, nemo esse voluptas blanditiis quibusdam a ut, deserunt dolorum eligendi sit, molestias cupiditate earum quis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sunt ea eaque voluptas dolorum natus ad quam maxime quae a similique doloribus adipisci dolor deleniti non, minus fuga quaerat nihil?loremLorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus architecto enim corrupti possimus ea repellendus, laboriosam est, et assumenda nulla natus fugit nemo ex soluta perferendis deleniti sed magni beatae.</p>
+     <script>
+        function fun(){
+            let a=document.getElementById("hovertext")
+            a.style.color="red"
+        }
+        function fun1(){
+            let a=document.getElementById("hovertext")
+            a.style.color="black"
+        }
+     </script>
+ </body>
+ </html>

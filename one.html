@@ -1,0 +1,36 @@
+<!-- Create a function that changes the background color of a div with the id "Colorbox" to blue when a button with the id "colorbutton" is clicked. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #colorbox{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(194, 119, 21);
+        }
+        #colorbutton{
+            margin-top: 10px;
+            width: 100px;
+            height: 50px;
+            font-size: larger;
+            background-color: aqua;
+        }
+    </style>
+ </head>
+ <body>
+    <div id="colorbox">
+    </div>
+    <button id="colorbutton" onclick="fun()">Click Me</button>
+    <script>
+        function fun()
+        {
+            let a=document.getElementById("colorbox")
+            a.style.backgroundColor="blue"
+        }
+
+    </script>
+ </body>
+ </html>

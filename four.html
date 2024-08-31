@@ -1,0 +1,39 @@
+<!-- write a function that displays the value entered in an input field with id "userinput" inside a paragraph with id "displaytext" when a button with id "showbutton" is clicked-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #showbutton{
+            margin-top: 10px;
+            width: 100px;
+            height: 50px;
+            font-size: larger;
+            background-color: rgb(53, 5, 196);
+        }
+        #showbutton:active{
+            background-color: aqua;
+        }
+        #showbutton:active{
+            background-color: red;
+        }
+    </style>
+ </head>
+ <body>
+    <input type="text" id="userinput">
+    <p id="displaytext"></p>
+    <button id="showbutton" onclick="fun()">Show</button>
+    <script>
+        function fun(){
+            let a=document.getElementById("userinput")
+            if(a.value==="")
+                 document.getElementById("displaytext").innerHTML="Please enter data in input field"
+            else
+                 document.getElementById("displaytext").innerHTML=document.getElementById("userinput").value
+
+        }    
+    </script>
+ </body>
+ </html>
